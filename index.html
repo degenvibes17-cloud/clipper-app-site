@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clipper</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, sans-serif; max-width: 720px; margin: 0 auto;
+         padding: 48px 20px; line-height: 1.6; color: #1d1d1f; background: #fff; }
+  h1 { font-size: 2rem; margin-bottom: .25rem; }
+  .tag { color: #555; margin-top: 0; }
+  a { color: #0a66c2; }
+  footer { margin-top: 48px; font-size: .9rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Clipper</h1>
+<p class="tag">A personal tool for publishing short video clips to the operator's own channels.</p>
+
+<h2>What it does</h2>
+<p>Clipper is a private, self-hosted application used by a single operator to prepare short
+vertical clips from long-form video and publish them to social media accounts that the operator
+owns and manages. It runs on the operator's own computer; it is not a public service and does not
+offer accounts to other users.</p>
+
+<h2>How it uses Google / YouTube</h2>
+<p>When the operator connects one of their own YouTube channels, Clipper requests permission to:</p>
+<ul>
+  <li><strong>Upload videos</strong> to that channel (YouTube Data API, <code>youtube.upload</code>), so a clip
+      the operator chooses can be published or scheduled.</li>
+  <li><strong>Read basic channel information</strong> (<code>youtube.readonly</code>), to confirm the right channel
+      is connected and to check that a published video is public.</li>
+</ul>
+<p>Every upload is started by the operator. Clipper never posts on its own, never reads or
+modifies other people's channels, and never shares any data with third parties.</p>
+
+<p>Read the <a href="privacy.html">Privacy Policy</a> and the <a href="terms.html">Terms of Service</a>.</p>
+
+<footer>Questions: open an issue at
+<a href="https://github.com/degenvibes17-cloud/clipper-app-site/issues">github.com/degenvibes17-cloud/clipper-app-site</a>.</footer>
+</body>
+</html>
