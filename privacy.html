@@ -13,7 +13,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="meta">Last updated: November 1, 2026</p>
+<p class="meta">Last updated: November 2, 2026</p>
 
 <p>Clipper ("the app") is a self-hosted tool operated by a single person to publish short video
 clips to social media accounts that person owns. This policy explains what data the app accesses
@@ -29,12 +29,17 @@ and how it is handled.</p>
   <li>The privacy status and public statistics of videos the app uploaded, used to confirm a
       scheduled video went public.</li>
 </ul>
-<p>The app does not request or store email addresses, contacts, Google Drive files, or any data
-about other users or other channels.</p>
+<p>When the operator connects their own TikTok account, the app receives OAuth tokens allowing it
+to read basic profile information (open ID and display name, scope <code>user.info.basic</code>) and
+to upload videos to that account's inbox as drafts (scope <code>video.upload</code>).</p>
+<p>When the operator connects their own Instagram professional account, the app receives a token
+allowing it to publish Reels to that account and read the resulting post's link.</p>
+<p>The app does not request or store email addresses, contacts, files, followers, messages, or any
+data about other users or other accounts.</p>
 
 <h2>How data is used</h2>
-<p>Data is used only to perform actions the operator starts: uploading or scheduling a chosen clip
-to their own channel and checking its status. The app does not use data for advertising, does not
+<p>Data is used only to perform actions the operator starts: uploading, scheduling or sending a
+chosen clip to their own account and checking its status. The app does not use data for advertising, does not
 sell or transfer it, and does not use it to build user profiles.</p>
 
 <h2>Storage and security</h2>
@@ -53,8 +58,10 @@ subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Servic
 <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2>Revoking access and deleting data</h2>
-<p>Access can be revoked at any time at
-<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Disconnecting
+<p>Access can be revoked at any time: for Google/YouTube at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; for TikTok
+in the TikTok app under Settings and privacy, Security and permissions, Manage app permissions; for
+Instagram in Accounts Center, Apps and websites. Disconnecting
 a channel in the app deletes its stored tokens from the operator's computer.</p>
 
 <h2>Contact</h2>
