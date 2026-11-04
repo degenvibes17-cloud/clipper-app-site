@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Connecting Instagram</title>
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; background: #111; color: #eee;
+         display: grid; place-items: center; min-height: 100vh; margin: 0; padding: 16px; }
+  a { color: #6cf; }
+</style>
+</head>
+<body>
+<main>
+  <p>Finishing the Instagram connection on your computer…</p>
+  <p id="manual" hidden>If nothing happens, make sure the clipper is running, then
+    <a id="go" href="#">continue here</a>.</p>
+</main>
+<script>
+  // Instagram only returns to https pages; this hands the login back to the
+  // clipper running on this computer. Nothing is stored or sent anywhere else.
+  var target = "http://localhost:8765/oauth/instagram/callback" + location.search;
+  document.getElementById("go").href = target;
+  setTimeout(function () { document.getElementById("manual").hidden = false; }, 3000);
+  location.replace(target);
+</script>
+</body>
+</html>
